@@ -6,15 +6,38 @@
     <title>Penguin Fashion</title>
     <!-- tailwind css link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!--bebas neue google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<!-- Roboto google font link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!--montserrat google font link  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    .bebas-neue{
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .roboto{
+        font-family: 'Roboto', sans-serif;
+    }
+    .montserrat{
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
 </head>
 <body>
-    <header class="container mx-auto">
+    <header class="container mx-auto bg-orange-100">
         <!-- navbar -->
         <div class="flex justify-between items-center ">
-            <div class="">
-                <h1 class="font-bold text-2xl text-blue-950"><span class="text-lime-600">Penguin</span> Fashion</h1>
+            <div class="montserrat">
+                <h1 class="text-2xl text-blue-950 font-bold"><span class="text-lime-600">Penguin</span> Fashion</h1>
             </div>
-            <div class="flex gap-20 items-center list-none text-base">
+            <div class="flex gap-20 items-center list-none text-base montserrat font-medium">
                 <li><a href="">Home</a></li>
                 <li><a href="">Product</a></li>
                 <li><a href="">About Us</a></li>
@@ -22,9 +45,11 @@
             </div>
         </div>
         <!-- banner section start -->
-        <div>
-            <div>
-                <h1 class="text-3xl text-blue-950"><span class="text-yellow-400">Be the Penguins</span> <br> of Winter</h1>
+        <div class="flex flex-col flex-col-reverse md:flex-col md:flex-col-reverse lg:flex-row gap-20 justify-between items-center p-24">
+            <div class="text-center md:text-center lg:text-left">
+                <h1 class="text-6xl text-blue-950 font-bold mb-5 bebas-neue"><span class="text-yellow-400">Be the Penguins</span> <br> of Winter</h1>
+                <p class="roboto text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <button class="bg-gradient-to-r from-lime-700 to-lime-500 text-white px-8 py-2 rounded-md mt-5 roboto text-base font-medium"><a href="">Buy Now</a></button>
             </div>
             <div>
                 <img src="images/model.png" alt="">
@@ -32,6 +57,63 @@
         </div>
         <!-- banner section end -->
     </header>
-    <main></main>
+    <main>
+        <!-- jacket gallery -->
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 mt-20">
+                <div class="bg-white shadow-md p-8">
+                    <div class="bg-[#F1F1F1] rounded-md">
+                        <img src="images/jacket-1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl roboto text-[#363958] mb-2">Yellow Coat Jacket</h3>
+                        <p class="roboto text-sm text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex md:gap-24 lg:gap-32 items-center">
+                            <h2 class="roboto text-4xl font-black text-[#FABE4C]">$234</h2>
+                            <button class="bg-gradient-to-r from-lime-700 to-lime-500 text-white px-8 py-2 rounded-md mt-5 roboto text-base font-medium"><a href="">Buy Now</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md p-8">
+                    <div class="bg-[#F1F1F1] rounded-md">
+                        <img src="images/jacket-2.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl roboto text-[#363958] mb-2">Ladies Jacket</h3>
+                        <p class="roboto text-sm text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex md:gap-24 lg:gap-32 items-center">
+                            <h2 class="roboto text-4xl font-black text-[#FABE4C]">$234</h2>
+                        <button class="bg-gradient-to-r from-lime-700 to-lime-500 text-white px-8 py-2 rounded-md mt-5 roboto text-base font-medium"><a href="">Buy Now</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md p-8">
+                    <div class="bg-[#F1F1F1] rounded-md">
+                        <img src="images/jacket-3.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl roboto text-[#363958] mb-2">Woman Leather Jacket</h3>
+                        <p class="roboto text-sm text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex md:gap-24 lg:gap-32 items-center">
+                            <h2 class="roboto text-4xl font-black text-[#FABE4C]">$234</h2>
+                        <button class="bg-gradient-to-r from-lime-700 to-lime-500 text-white px-8 py-2 rounded-md mt-5 roboto text-base font-medium"><a href="">Buy Now</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- delivery -->
+        <section>
+            <div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <img src="images/" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
